@@ -38,6 +38,17 @@ img {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+/* Figure captions / image credit */
+figure {
+  margin: 20px 0 10px;
+}
+
+.credit {
+  font-size: 0.9em;
+  color: #5b6b7c;
+  margin-top: 6px;
+}
+
 /* Table styling for Quick Facts */
 table.facts {
   width: 100%;
