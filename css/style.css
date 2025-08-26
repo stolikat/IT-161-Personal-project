@@ -1,5 +1,4 @@
-/* style.css */
-
+/* Base layout & typography */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8f9fa;
@@ -29,6 +28,47 @@ p {
   font-size: 1.1em;
 }
 
+/* Images */
+img {
+  display: block;
+  margin: 20px 0;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Table styling for Quick Facts */
+table.facts {
+  width: 100%;
+  max-width: 980px;
+  border-collapse: collapse;
+  margin: 20px 0 30px;
+  font-size: 0.98em;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+table.facts thead {
+  background: #1a5276;
+  color: #fff;
+}
+
+table.facts th,
+table.facts td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e6ecf1;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.facts tbody tr:hover {
+  background: #f3f6f9;
+}
+
+/* Mobile tweaks */
 @media screen and (max-width: 600px) {
   body {
     padding: 20px;
@@ -44,5 +84,9 @@ p {
 
   p {
     font-size: 1em;
+  }
+
+  table.facts {
+    font-size: 0.9em;
   }
 }
